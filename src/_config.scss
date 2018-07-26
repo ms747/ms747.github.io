@@ -1,0 +1,16 @@
+$primary-color: #111;
+$secondary-color: #ffd800;
+$text-color: #fff;
+$opacity: 0.9;
+
+@mixin animate() {
+  transition: all linear 0.5s;
+}
+
+.container{
+  max-width: 90%;
+}
+
+.text-secondary{
+  color : $secondary-color;
+}

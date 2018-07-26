@@ -1,0 +1,70 @@
+@import "reset";
+@import "config";
+@import "menu";
+@import "mainmenu";
+@import "about";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  // font-weight: 800;
+  background: $primary-color;
+  height: 100vh;
+  color: $text-color;
+  overflow: hidden;
+  background: url("../img/background.png");
+  background-size: cover;
+  z-index: -1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, $opacity);
+    z-index: -9999;
+  }
+
+  a {
+    color: $text-color;
+    &:hover {
+      color: $secondary-color;
+      @include animate();
+    }
+  }
+
+  h1 {
+    font-size: 6rem;
+
+    
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    &.sm-heading {
+      background: rgba(lighten($primary-color, 2), 0.5);
+      padding: 0.4rem 0.5rem;
+      width: 95%;
+      box-sizing: border-box;
+    }
+  }
+
+  main {
+    margin-top: 10rem;
+    //line-height: 8rem;
+    margin-left: 3rem;
+    .sm-heading {
+      margin-top: 5rem;
+    }
+  }
+}
+
+.icons {
+  position: relative;
+  top: 1rem;
+  a {
+    padding: 0 0.2rem;
+    text-decoration: none;
+  }
+}

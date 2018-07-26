@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 90%; }
+
+.text-secondary {
+  color: #ffd800; }
+
+header {
+  z-index: 9999; }
+  header .menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 9999; }
+    header .menu .items {
+      cursor: pointer;
+      z-index: 9999; }
+      header .menu .items:hover {
+        transition: all linear 0.5s; }
+
+.openMenu {
+  font-weight: 900;
+  font-size: 2em;
+  font-style: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  z-index: 9999;
+  transform: rotate(0deg);
+  transition: all linear 0.1s; }
+  .openMenu::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9"; }
+
+.closeMenu {
+  font-weight: 900;
+  font-size: 2em;
+  font-style: normal;
+  line-height: 1;
+  text-rendering: auto;
+  z-index: 9999;
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: all linear 0.1s; }
+  .closeMenu::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d"; }
+
+.main-menu {
+  z-index: 99;
+  position: fixed;
+  opacity: 0.95;
+  visibility: hidden;
+  display: grid;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr 1fr; }
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  transform: translate3d(0, 100%, 0);
+  transition: all ease-out 0.2s; }
+  .row1.show {
+    transform: translate3d(0, 0, 0); }
+
+.portfolio-image {
+  z-index: 10;
+  background: url("../img/portfolio-image.jpeg");
+  background-size: cover;
+  background-position: 30px;
+  border: 0.5rem solid #ffd800;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px; }
+
+.row2 {
+  background: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0, -100%, 0);
+  transition: all ease-out 0.2s; }
+  .row2.show {
+    transform: translate3d(0, 0, 0); }
+
+.row2 > ul {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 6rem;
+  transform: translate3d(100%, 0, 0);
+  transition: all ease-out 0.3s; }
+  .row2 > ul.show {
+    transform: translate3d(0, 0, 0); }
+
+.row2 > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.current {
+  color: #ffd800; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.col-port {
+  display: flex;
+  justify-content: center; }
+
+#about-portfolio {
+  margin-top: 4rem; }
+
+.bio {
+  font-size: 2.5rem; }
+  .bio-text {
+    font-size: 1.5rem; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #111;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  background: url("../img/background.png");
+  background-size: cover;
+  z-index: -1; }
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: -9999; }
+  body a {
+    color: #fff; }
+    body a:hover {
+      color: #ffd800;
+      transition: all linear 0.5s; }
+  body h1 {
+    font-size: 6rem; }
+  body h2 {
+    font-size: 1.5rem; }
+    body h2.sm-heading {
+      background: rgba(22, 22, 22, 0.5);
+      padding: 0.4rem 0.5rem;
+      width: 95%;
+      box-sizing: border-box; }
+  body main {
+    margin-top: 10rem;
+    margin-left: 3rem; }
+    body main .sm-heading {
+      margin-top: 5rem; }
+
+.icons {
+  position: relative;
+  top: 1rem; }
+  .icons a {
+    padding: 0 0.2rem;
+    text-decoration: none; }

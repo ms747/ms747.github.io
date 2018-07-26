@@ -1,0 +1,55 @@
+@mixin menuOpenClose {
+  transition: all linear 0.1s;
+}
+
+header {
+  z-index: 9999;
+  .menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    .items {
+      cursor: pointer;
+      z-index: 9999;
+      &:hover {
+        @include animate();
+      }
+    }
+  }
+}
+
+.openMenu {
+  font-weight: 900;
+  font-size: 2em;
+  font-style:normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  z-index: 9999;
+  &::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    
+  }
+  transform: rotate(0deg);
+  @include menuOpenClose();
+}
+
+
+.closeMenu {
+  font-weight: 900;
+  font-size: 2em;
+  font-style:normal;
+  line-height: 1;
+  text-rendering: auto;
+  z-index: 9999;
+  display: inline-block;
+  &::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    
+  }
+  transform: rotate(90deg);
+  @include menuOpenClose();
+}
