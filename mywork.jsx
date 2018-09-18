@@ -4,15 +4,20 @@ let WorkCard = function({ projects }) {
     <div className="card-grid">
       {projects.map(project => {
         return (
-          <div key={project.id} className="card">
+          <a
+            key={project.id}
+            href={project.url}
+            target="_blank"
+            className="card"
+          >
             <h3 className="card-title">{project.name}</h3>
             <img className="card-img" src={project.src} alt="" />
             <div className="card-link">
-              <a href={project.url} className="link" target="_blank">
+              <p className="link">
                 <i className="fas fa-arrow-right" />
-              </a>
+              </p>
             </div>
-          </div>
+          </a>
         );
       })}
     </div>
@@ -52,4 +57,5 @@ class App extends React.Component {
     return <WorkCard projects={this.state.projects} />;
   }
 }
+
 ReactDOM.render(<App />, document.getElementById("root"));
