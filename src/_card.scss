@@ -1,0 +1,66 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 4rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  height: 65vh;
+  overflow-y: auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: $secondary-color;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  margin-top: 1rem;
+}
+
+.card-img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 1rem;
+}
+
+.link {
+  color: black;
+  font-size: 1.5rem;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.card-link {
+  padding: 20px;
+  margin-top: 1rem;
+
+  &:hover {
+    background: darken($secondary-color, 5);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  left: -100px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darken($text-color, 3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($secondary-color, 5);
+}

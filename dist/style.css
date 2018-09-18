@@ -127,6 +127,70 @@ header {
   .bio-text {
     font-size: 1.5rem; }
 
+.blinking-cursor {
+  font-weight: 200;
+  font-size: 30px;
+  animation: 1s blink step-end infinite; }
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent; }
+  50% {
+    color: white; } }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 4rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  height: 65vh;
+  overflow-y: auto;
+  padding: 0 20px; }
+
+.card {
+  background: #ffd800;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.card-title {
+  margin-top: 1rem; }
+
+.card-img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 1rem; }
+
+.link {
+  color: black;
+  font-size: 1.5rem; }
+  .link:hover {
+    color: black; }
+
+.card-link {
+  padding: 20px;
+  margin-top: 1rem; }
+  .card-link:hover {
+    background: #e6c200; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  left: -100px; }
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #f7f7f7;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6c200; }
+
 body {
   font-family: 'Raleway', sans-serif;
   background: #111;
@@ -135,6 +199,7 @@ body {
   overflow: hidden;
   background: url("../img/background.png");
   background-size: cover;
+  background-repeat: no-repeat;
   z-index: -1; }
   body::after {
     content: "";
@@ -160,7 +225,7 @@ body {
       width: 95%;
       box-sizing: border-box; }
   body main {
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-left: 3rem; }
     body main .sm-heading {
       margin-top: 5rem; }

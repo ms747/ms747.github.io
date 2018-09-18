@@ -3,18 +3,21 @@
 @import "menu";
 @import "mainmenu";
 @import "about";
+@import "cursor";
+@import "card";
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
   font-family: 'Raleway', sans-serif;
-  // font-weight: 800;
   background: $primary-color;
   height: 100vh;
   color: $text-color;
   overflow: hidden;
   background: url("../img/background.png");
   background-size: cover;
+  background-repeat: no-repeat;
   z-index: -1;
+
   &::after {
     content: "";
     position: absolute;
@@ -28,6 +31,7 @@ body {
 
   a {
     color: $text-color;
+
     &:hover {
       color: $secondary-color;
       @include animate();
@@ -37,11 +41,12 @@ body {
   h1 {
     font-size: 6rem;
 
-    
+
   }
 
   h2 {
     font-size: 1.5rem;
+
     &.sm-heading {
       background: rgba(lighten($primary-color, 2), 0.5);
       padding: 0.4rem 0.5rem;
@@ -51,9 +56,9 @@ body {
   }
 
   main {
-    margin-top: 10rem;
-    //line-height: 8rem;
+    margin-top: 8rem;
     margin-left: 3rem;
+
     .sm-heading {
       margin-top: 5rem;
     }
@@ -63,6 +68,7 @@ body {
 .icons {
   position: relative;
   top: 1rem;
+
   a {
     padding: 0 0.2rem;
     text-decoration: none;

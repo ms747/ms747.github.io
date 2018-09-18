@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./dist/style.css">
+  <title>Mayur Shah | About Me</title>
+</head>
+
+<body id="background">
+  <header>
+    <div class="menu">
+      <a class="items">
+        <i id="menu-btn" class="openMenu"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="main-menu" id="main-menu">
+    <div class="row1">
+      <div class="portfolio-image"></div>
+    </div>
+    <div class="row2">
+      <ul id="menu-container">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Me</a>
+        </li>
+        <li>
+          <a href="mywork.html" class="current">My Work</a>
+        </li>
+        <li>
+          <a href="#">How to Reach Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <h1 class="lg-heading">
+      My
+      <span class="text-secondary">Work</span>
+    </h1>
+    <div id="root">
+
+    </div>
+  </main>
+  <script src="./main.js"></script>
+  <script type="text/babel" src="./mywork.jsx"></script>
+
+</body>
+
+</html>
