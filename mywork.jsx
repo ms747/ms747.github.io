@@ -1,5 +1,4 @@
 let WorkCard = function({ projects }) {
-  console.log(projects.length);
   return (
     <div className="card-grid">
       {projects.map(project => {
