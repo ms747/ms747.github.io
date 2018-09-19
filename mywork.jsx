@@ -31,28 +31,24 @@ class App extends React.Component {
         id: 1,
         name: "Recruitment Website for Latur Zilhaparishad",
         url: "http://www.msrlmlaturjobs.com",
-        src: "./img/latur.png",
         class: "fas fa-users card-img"
       },
       {
         id: 2,
         name: "Website for GanSan IT Technologies",
         url: "http://www.gansan.in/",
-        src: "./img/website.png",
         class: "fab fa-chrome card-img"
       },
       {
         id: 3,
         name: "Website for Shivasol Technologies",
         url: "http://support.shivasol.com",
-        src: "./img/website.png",
         class: "fab fa-chrome card-img"
       },
       {
         id: 4,
         name: "My Git Work",
         url: "https://github.com/ms747/",
-        src: "./img/website.png",
         class: "fab fa-github card-img"
       }
     ]
