@@ -11,7 +11,6 @@ let WorkCard = function({ projects }) {
             className="card"
           >
             <h3 className="card-title">{project.name}</h3>
-            {/* <img className="card-img" src={project.src} alt="" /> */}
             <i className={project.class} />
             <div className="card-link">
               <p className="link">
