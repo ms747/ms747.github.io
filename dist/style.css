@@ -205,6 +205,29 @@ header {
 ::-webkit-scrollbar-thumb:hover {
   background: #e6c200; }
 
+.contact-container {
+  margin-right: 4rem;
+  height: 40vh;
+  margin-top: 2rem; }
+
+.form {
+  border: 2px solid #ffd800;
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between; }
+  .form input[type="text"] {
+    padding: 5px;
+    font-size: 20px; }
+  .form input[type="submit"] {
+    align-self: center;
+    border: none;
+    background: #ffd800;
+    padding: 10px 20px;
+    margin-top: 1rem; }
+
 body {
   font-family: 'Raleway', sans-serif;
   background: #111;
