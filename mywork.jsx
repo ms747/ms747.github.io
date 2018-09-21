@@ -1,24 +1,28 @@
 let WorkCard = function({ projects }) {
   return (
     <div className="card-grid">
-      {projects.map(project => {
-        return (
-          <a
-            key={project.id}
-            href={project.url}
-            target="_blank"
-            className="card"
-          >
-            <h3 className="card-title">{project.name}</h3>
-            <i className={project.class} />
-            <div className="card-link">
-              <p className="link">
-                <i className="fas fa-arrow-right" />
-              </p>
-            </div>
-          </a>
-        );
-      })}
+      {projects ? (
+        projects.map(project => {
+          return (
+            <a
+              key={project.id}
+              href={project.url}
+              target="_blank"
+              className="card"
+            >
+              <h3 className="card-title">{project.name}</h3>
+              <i className={project.class} />
+              <div className="card-link">
+                <p className="link">
+                  <i className="fas fa-arrow-right" />
+                </p>
+              </div>
+            </a>
+          );
+        })
+      ) : (
+        <h1>Loading...</h1>
+      )}
     </div>
   );
 };
