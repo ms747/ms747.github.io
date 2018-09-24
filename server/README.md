@@ -1,15 +1,15 @@
 # REST API
 
-* [ ] Install all dependencies
-  * [ ] Express, cors, morgan, mongodb, mongoose
-
-* [ ] Create Contacts Mongoose Schema for following Parameters {Name ,Email, Message}
-* [ ] Create Routes
-  * [ ] POST 
-    * [ ] API/contactme/ 
-      * [ ] Add Validation For Fields
+* [x] Install all dependencies
+  * [x] Express, cors, morgan, mongodb, mongoose, body-parser
+* [x] Connect to Mongodb
+* [x] Create Contacts Mongoose Schema for following Parameters {Name ,Email, Message}
+* [x] Create Routes
+  * [x] POST 
+    * [x] API/contactme/ 
+      * [x] Add Validation For Fields
   * [ ] GET
     * [ ] API/contactme/
-      * [ ] Retrive All Messages
-    * [ ] API/contactme/:id
-      * [ ] Retrive Selected Message Using ID
+      * [ ] Add Authentication
+        * [ ] Retrive All Messages
+    

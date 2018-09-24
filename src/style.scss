@@ -8,8 +8,11 @@
 @import "contactme";
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body {
+*{
   font-family: 'Raleway', sans-serif;
+}
+
+body {
   background: $primary-color;
   height: 100vh;
   color: $text-color;
