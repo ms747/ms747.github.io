@@ -2,6 +2,7 @@
 /server/server.cert
 node_modules/
 server/.env
-server/package-json.lock
 server.cert
 server/server.*
+server/package-lock.json
+server/npm-debug.log
