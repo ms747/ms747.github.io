@@ -230,11 +230,15 @@ header {
     background: #ffd800;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 20px 100px;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    color: black; }
     .form #submit:hover {
       background: #ebc700; }
+    .form #submit:disabled {
+      background: #998200;
+      cursor: not-allowed; }
   .form #after {
     position: absolute;
     top: 0;
@@ -265,14 +269,43 @@ header {
     opacity: 0; } }
 
 .spinner {
+  --radius: 50px;
   background: #ffd800;
   position: absolute;
   color: black;
   justify-content: center;
   align-items: center;
-  padding: 100px;
-  left: calc(50% - 100px);
-  top: calc(50% - 100px); }
+  padding: var(--radius);
+  left: calc(50% - var(--radius));
+  top: calc(50% - var(--radius));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.63); }
+  .spinner div {
+    background: transparent;
+    padding: 70px;
+    border-radius: 50%;
+    position: relative; }
+    .spinner div::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      border-radius: 50%;
+      padding: 70px;
+      border: 10px solid transparent;
+      border-top-color: #111;
+      border-bottom-color: #111;
+      animation: spinny 1s linear infinite; }
+
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(0.3); }
+  50% {
+    transform: rotate(180deg) scale(1); }
+  100% {
+    transform: rotate(360deg) scale(0.3); } }
 
 * {
   font-family: 'Raleway', sans-serif; }

@@ -1,11 +1,10 @@
 const Spinner = ({ show }) => {
-  console.log(show);
   return (
     <div
       className="spinner"
       style={{ display: show === true ? "block" : "none" }}
     >
-      Loading...
+      <div />
     </div>
   );
 };
@@ -17,7 +16,7 @@ class App extends React.Component {
       name: "",
       email: "",
       message: "",
-      URL: "http://localhost:8080/contactme",
+      URL: "http://172.104.57.237:8080/contactme",
       buttonState: false,
       loadingState: false
     };

@@ -28,15 +28,22 @@
     background: $secondary-color;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 20px 100px;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    color:black;
 
     &:hover {
       background: darken($secondary-color, 4);
-      // animation: pop 1s linear;
+    }
+
+    &:disabled{
+      background: darken($secondary-color,20);
+      cursor: not-allowed;
     }
   }
+
+  
 
   #after {
     position: absolute;
@@ -79,12 +86,47 @@
 }
 
 .spinner{
+  --radius: 50px;
   background: $secondary-color;
   position: absolute;
   color: black;
   justify-content: center;
   align-items: center;
-  padding:100px;
-  left: calc(50% - 100px);
-  top: calc(50% - 100px);
+  padding:var(--radius);
+  left: calc(50% - var(--radius));
+  top: calc(50% - var(--radius));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.63); 
+  div{
+    background: transparent;
+    padding:70px;
+    border-radius: 50%;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      top:-10px;
+      left: -10px;
+      border-radius: 50%;
+      padding: 70px;
+      border: 10px solid transparent;
+      border-top-color: $primary-color;
+      border-bottom-color: $primary-color;
+      animation: spinny 1s linear infinite;
+    }
+  }
+}
+
+@keyframes spinny {
+  0%{
+    transform: rotate(0deg) scale(0.3);
+  }
+  50%{
+    transform: rotate(180deg) scale(1); 
+  }
+  100%{
+    transform: rotate(360deg) scale(0.3);
+  }
 }
