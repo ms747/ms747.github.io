@@ -1,5 +1,7 @@
-server/server.key
-server/server.cert
+/server/server.key
+/server/server.cert
 node_modules/
-.env
+server/.env
 server/package-json.lock
+server.cert
+server/server.*
