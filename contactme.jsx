@@ -16,7 +16,7 @@ class App extends React.Component {
       name: "",
       email: "",
       message: "",
-      URL: "http://172.104.57.237:8080/contactme",
+      URL: "https://server-wcirhuzeau.now.sh/contactme",
       buttonState: false,
       loadingState: false
     };
