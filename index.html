@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/animation.css">
     <link rel="stylesheet" href="./dist/style.css">
     <title>Mayur Shah | Portfolio</title>
 </head>
@@ -42,7 +43,7 @@
         </div>
     </div>
 
-    <main>
+    <main data-sal="slide-down" data-sal-duration="800" data-sal-easing="ease-out-bounce">
         <h1 class="lg-heading">
             Mayur
             <span class="text-secondary">Shah</span>
@@ -67,6 +68,10 @@
         </div>
     </main>
     <script src="./main.js"></script>
+    <script src="./dist/animation.js"></script>
+    <script>
+        sal();
+    </script>
 </body>
 
 </html>

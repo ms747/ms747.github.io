@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="./dist/animation.css">
   <link rel="stylesheet" href="./dist/style.css">
   <title>Mayur Shah | About Me</title>
 </head>
@@ -45,16 +46,18 @@
     </div>
   </div>
 
-  <main>
+  <main data-sal="slide-down" data-sal-duration="800" data-sal-easing="ease-out-bounce">
     <h1 class="lg-heading">
       My
       <span class="text-secondary">Work</span>
     </h1>
-    <div id="root">
-
-    </div>
+    <div id="root"/>
   </main>
   <script src="./main.js"></script>
+  <script src="./dist/animation.js"></script>
+  <script>
+    sal();
+  </script>
   <script type="text/babel" src="./mywork.jsx"></script>
 
 </body>
