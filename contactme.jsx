@@ -62,12 +62,22 @@ class App extends React.Component {
 
   handleChange = e => {
     this.setState({ [e.target.id]: e.target.value }, () => {
-      this.setState({
-        buttonState:
-          this.pattern.test(this.state.email) &&
-          !!this.state.name &&
-          !!this.state.message
-      });
+      this.setState(
+        {
+          buttonState:
+            this.pattern.test(this.state.email) &&
+            !!this.state.name &&
+            !!this.state.message
+        },
+        () => {
+          if (this.state.buttonState === true) {
+            this.myRef.current.classList.add("popup");
+            setTimeout(_ => {
+              this.myRef.current.classList.remove("popup");
+            }, 300);
+          }
+        }
+      );
     });
   };
 
