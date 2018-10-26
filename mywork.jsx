@@ -56,7 +56,7 @@ class App extends React.Component {
       },
       {
         id: 5,
-        name: "Work Repository(GIT)",
+        name: "Work Repository (GIT)",
         url: "https://github.com/ms747/",
         class: "fab fa-github card-img"
       }
