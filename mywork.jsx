@@ -32,13 +32,13 @@ class App extends React.Component {
     projects: [
       {
         id: 1,
-        name: "Recruitment Website for Latur Zilhaparishad",
+        name: "Recruitment Portal for Latur Zilha Parishad",
         url: "http://www.msrlmlaturjobs.com",
         class: "fas fa-users card-img"
       },
       {
         id: 2,
-        name: "Website for GanSan IT Technologies",
+        name: "Website for GanSan IT Technologies Pvt Ltd",
         url: "http://www.gansan.in/",
         class: "fab fa-chrome card-img"
       },
@@ -50,13 +50,13 @@ class App extends React.Component {
       },
       {
         id: 4,
-        name: "Website for Indimac Pvt Ltd.",
+        name: "Website for Indimac Pvt Ltd",
         url: "http://www.indimac.in",
         class: "fab fa-chrome card-img"
       },
       {
         id: 5,
-        name: "My Git Work",
+        name: "Work Repository(GIT)",
         url: "https://github.com/ms747/",
         class: "fab fa-github card-img"
       }
