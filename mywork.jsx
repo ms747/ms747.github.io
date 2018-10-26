@@ -50,6 +50,12 @@ class App extends React.Component {
       },
       {
         id: 4,
+        name: "Website for Indimac Pvt Ltd.",
+        url: "http://www.indimac.in",
+        class: "fab fa-chrome card-img"
+      },
+      {
+        id: 5,
         name: "My Git Work",
         url: "https://github.com/ms747/",
         class: "fab fa-github card-img"
